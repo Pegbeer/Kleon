@@ -1,8 +1,8 @@
-import React, {FC, SVGProps} from 'react';
+import React, { SVGProps} from 'react';
 
 // Define the props interface
 interface IconProps {
-    Svg: FC<SVGProps<SVGSVGElement>>;
+    Svg: React.FunctionComponent<SVGProps<SVGSVGElement>>;
     width?: number;
     height?: number;
     fill?: string;

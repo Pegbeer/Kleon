@@ -1,4 +1,4 @@
-import React, {FC, HTMLInputTypeAttribute, SVGProps} from "react";
+import React, { HTMLInputTypeAttribute, SVGProps} from "react";
 import Icon from "@/app/components/Icon";
 
 export default function TextField({
@@ -9,7 +9,7 @@ export default function TextField({
                                       onTextChanged
                                   }:
                                       {
-                                          leadingIcon?: FC<SVGProps<SVGSVGElement>>,
+                                          leadingIcon?: React.FunctionComponent<SVGProps<SVGSVGElement>>,
                                           leadingIconColor?: string,
                                           placeholder: string,
                                           inputType: HTMLInputTypeAttribute,
@@ -21,7 +21,9 @@ export default function TextField({
             <div
                 className="w-full flex flex-row items-center gap-3 focus-within:border-solid focus:border-1 focus-within:border-primary px-8 py-4 bg-surface text-gray-400 rounded-2xl">
                 <input className={` border-transparent p-0 bg-transparent flex-grow focus:border-none focus:ring-0`}
-                       maxLength={32} placeholder={placeholder} type={inputType}/>
+                       maxLength={32} 
+                       placeholder={placeholder} 
+                       type={inputType}/>
             </div>
         );
     }else{
@@ -29,7 +31,7 @@ export default function TextField({
             <div
                 className="w-full flex flex-row items-center gap-3 focus-within:border-solid focus:border-1 focus-within:border-primary px-8 py-4 bg-surface text-gray-400 rounded-2xl">
                 <Icon Svg={leadingIcon} fill={leadingIconColor}/>
-                <input className="border-transparent p-0 bg-transparent flex-grow focus:border-none focus:ring-0"
+                <input className="outline-0 p-0 bg-transparent flex-grow focus:border-none focus:ring-0"
                        maxLength={32} placeholder={placeholder} type={inputType}/>
             </div>
         );

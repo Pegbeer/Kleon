@@ -9,6 +9,8 @@ import FilledButton from "../components/FilledButton";
 export default function LoginScreen() {
     return (
         <div className="flex flex-col w-full h-screen items-center justify-center px-8">
+            <img src={""}/>
+
             <h1 className="dark:text-white text-5xl font-bold">Welcome</h1>
             <h5 className="text-gray-400">Welcom back! Please enter your details</h5>
 
@@ -34,7 +36,10 @@ export default function LoginScreen() {
                     <a href="/public" className="text-gray-400">Forget password</a>
                 </div>
 
-                <FilledButton text="Login" backgroundColor="green" foregroundColor="white"/>
+                <FilledButton
+                    text="Login"
+                    backgroundColor="green"
+                    foregroundColor="white"/>
 
                 <div className="flex flex-row w-full items-center gap-4">
                     <div className="border-t-2 border-gray-400 my-8 w-full"></div>
@@ -42,8 +47,18 @@ export default function LoginScreen() {
                     <div className="border-t-2 border-gray-400 my-8 w-full"></div>
                 </div>
                 
-                <FilledButton text={"Login with GitHub"} backgroundColor={"white"} foregroundColor={"black"} icon={GitHubIcon} iconColor="accent"/>
-                <FilledButton text={"Login with Google"} backgroundColor={"white"} foregroundColor={"black"} icon={GoogleIcon} iconColor="accent"/>
+                <FilledButton
+                    text={"Login with GitHub"}
+                    backgroundColor={"white"}
+                    foregroundColor={"black"}
+                    icon={GitHubIcon}
+                    iconColor="accent"/>
+                <FilledButton
+                    text={"Login with Google"}
+                    backgroundColor={"white"}
+                    foregroundColor={"black"}
+                    icon={GoogleIcon}
+                    iconColor="accent"/>
             </div>
         </div>
     );

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import LoginScreen from "@/app/screens/LoginScreen";
+import LoginScreen from "@/app/login/page";
 
 export default function Home() {
   return (

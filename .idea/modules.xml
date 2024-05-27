@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../kleon.iml" filepath="$PROJECT_DIR$/../kleon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Kleon.iml" filepath="$PROJECT_DIR$/.idea/Kleon.iml" />
     </modules>
   </component>
 </project>
