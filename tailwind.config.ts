@@ -20,6 +20,9 @@ const config: Config = {
       },
       borderWidth:{
         '1':"1px"
+      },
+      dropShadow:{
+        'sm':'drop-shadow(0 0 30px #FFF)'
       }
     },
   },

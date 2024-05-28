@@ -3,8 +3,9 @@ import LoginScreen from "@/app/login/page";
 
 export default function Home() {
   return (
-    <main className="container">
-      <LoginScreen/>
-    </main>
+      <main>
+          <meta charSet="utf-8"/>
+          <LoginScreen/>
+      </main>
   );
 }

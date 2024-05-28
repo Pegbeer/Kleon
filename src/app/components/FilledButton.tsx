@@ -16,14 +16,14 @@ export default function FilledButton({ text, backgroundColor, foregroundColor, i
 
     if(icon === undefined) {
         return (
-            <button style={buttonStyle} className="px-6 py-4 rounded-xl">
+            <button style={buttonStyle} className="px-6 py-4 rounded-xl drop-shadow-white">
                 {text}
             </button>
         );
     }
 
     return (
-        <button style={buttonStyle} className="rounded-xl flex flex-row justify-center px-6 py-4 gap-2">
+        <button style={buttonStyle} className="rounded-xl flex flex-row justify-center px-6 py-4 gap-2 drop-shadow-white">
             <Icon Svg={icon} fill={iconColor} width={24} height={24}/>
             <p style={buttonStyle}>{text}</p>
         </button>

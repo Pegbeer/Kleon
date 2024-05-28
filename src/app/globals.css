@@ -18,6 +18,16 @@ body {
   background: var(--background);
 }
 
+.drop-shadow-white:hover {
+  filter: drop-shadow(0 0 8px #fff);
+}
+
+@media (width < 768px) {
+  .xsm\:inline-flex{
+    display: inline !important;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
