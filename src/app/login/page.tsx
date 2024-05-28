@@ -11,7 +11,7 @@ export default function LoginScreen() {
         <div className="flex flex-col lg:flex-row w-full h-screen items-center justify-center lg:justify-between lg:pl-0">
 
 
-            <div className="hidden md:flex md:h-[50%] lg:h-full md:p-8 lg:flex flex-col w-full h-full bg-gray-800 items-start lg:p-48 justify-between">
+            <div className="hidden md:flex md:h-[50%] lg:h-full md:px-48 md:py-8 lg:flex flex-col w-full h-full bg-gray-800 items-start lg:p-48 justify-between">
 
                 <div>
                     <img src="/assets/vectors/kleon-branding.svg" className="h-2/5 w-auto"/>
